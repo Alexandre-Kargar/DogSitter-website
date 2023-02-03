@@ -1,0 +1,259 @@
+
+ html, body {
+  font-family: Sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/*Barre de navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #2596be;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+    display: inline-block;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav-item:hover a{
+    color: orange;
+}
+
+.nav-item:active{
+border-radius: 6px;
+background-color: white;
+    color: #2596be;
+}
+
+.button-nav {
+text-decoration: none;
+background-color: orange;
+color: white;
+font-weight: bold;
+border-radius : 6px;
+padding: 10px 30px
+}
+
+
+.button-nav-chercher {
+border-radius: 6px;
+text-decoration: none;
+background-color: white;
+color: orange;
+font-weight: bold;
+padding: 10px 30px;
+margin-right: 10px;
+}
+
+.button-nav:hover {
+background-color: white;
+color: orange;
+}
+
+.button-nav-chercher:hover {
+background-color: orange;
+color: white;
+}
+
+/* formulaire */
+.inscription_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.inscription_form_Title {
+flex: 1;
+font-size: 36px;
+color: #666666;
+margin-top: 150px;
+}
+
+.inscription_form_subtitle {
+flex: 1;
+font-size: 22px;
+color: #666666;
+margin-top: -10px ;
+}
+
+.links-inscriptions{
+display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #666666;
+}
+
+.FaceBook-inscription-link {
+flex: 1;
+text-decoration: none;
+background-color: #3b5998;
+border-radius: 6px;
+padding: 18px 108px;
+color: white;
+font-size: 18px;
+margin-top: 10px;
+}
+
+.FaceBook-inscription-link:hover {
+background-color: #29487D;
+}
+
+.Google-inscription-link {
+flex: 1;
+text-decoration: none;
+border-style: solid;
+border-width: 1px;
+border-radius: 6px;
+padding: 18px 116px;
+color: #666666;
+font-size: 18px;
+margin-top: 10px;
+}
+
+.Google-inscription-link:hover {
+background-color: #FFFAF0;
+}
+
+.Apple-inscription-link {
+flex: 1;
+text-decoration: none;
+border-style: solid;
+padding: 18px 124px;
+border-width: 1px;
+border-radius: 6px;
+font-size: 18px;
+margin-top: 10px;
+color: #666666;
+}
+
+.Apple-inscription-link:hover {
+background-color: #FFFAF0;
+}
+
+.line {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 10px ;
+width: 90%
+}
+
+hr.left-divider {
+border-top: 1px solid #bbb;
+width: 45%;
+margin-left: 0;;
+}
+
+hr.right-divider {
+border-top: 1px solid #bbb;
+width: 45%;
+margin-right: 0;
+}
+
+.email {
+padding: 18px 126px;
+border-radius: 6px;
+border-width: 1px;
+font-size: 16px;
+color: #666666;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.password {
+padding: 18px 126px;
+border-radius: 6px;
+border-width: 1px;
+font-size: 16px;
+color: #666666;
+text-align: center;
+}
+
+.connexion-button {
+padding: 18px 170px;
+border-radius: 6px;
+border-width: 1px;
+font-size: 18px;
+background-color: orange;
+color: white;
+margin-top: 10px;
+border-color: orange;
+}
+
+.connexion-button:hover {
+background-color: #2596be;
+border-color: #2596be;
+}
+
+
+.Forgot-password {
+text-decoration: none;
+color: #2596be;
+margin-top: 20px;
+}
+
+.Forgot-password:hover{
+text-decoration: underline;
+}
+
+.entier-line {
+border-top: 1px solid #bbb;
+width: 450px;
+margin-top: 20px;
+}
+
+
+.Title-bas-de-page {
+font-size: 36px;
+color: #666666;
+margin-top: 20px;
+}
+
+.link-connexion {
+text-decoration: none;
+color: #2596be;
+}
+
+.link-connexion:hover{
+text-decoration: underline;
+}
+
+
+/*Footer */
+.footer {
+position: absolute;
+bottom: -450px;
+width: 100%;
+background-color: #2596be;
+color: white;
+text-align: center;
+}

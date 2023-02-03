@@ -1,0 +1,192 @@
+.html, body {
+background-color: #9ba6b1;
+font-family: Sans-serif;
+}
+
+
+ html, body {
+  font-family: Sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #2596be;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+    display: inline-block;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav-item:hover a{
+    color: orange;
+}
+
+.nav-item:active{
+border-radius: 6px;
+background-color: white;
+    color: #2596be;
+}
+
+.button-nav {
+text-decoration: none;
+background-color: orange;
+color: white;
+font-weight: bold;
+border-radius : 6px;
+padding: 10px 30px
+}
+
+.button-nav-chercher {
+border-radius: 6px;
+text-decoration: none;
+background-color: white;
+color: orange;
+font-weight: bold;
+padding: 10px 30px;
+margin-right: 10px;
+}
+
+.button-nav:hover {
+background-color: white;
+color: orange;
+}
+
+.button-nav-chercher:hover {
+background-color: orange;
+color: white;
+}
+
+.popup-form-container {
+background-color: white;
+height: 450px;
+width: 700px;
+border-radius: 12px;
+padding: 20px;
+position: absolute;
+margin: 140px 0 30% 25% ;
+color: #666666;
+}
+
+#title {
+font-size: 36px;
+text-align: center;
+}
+
+
+#separator-line {
+background-color: #d4d9de;
+width: 90%;
+height: 2px;
+border-style: none;
+}
+
+.villeSearch {
+position: absolute;
+padding: 10px 10px;
+margin-top: 30px;
+margin-left: 7%;
+width: 80%;
+height: 42px;
+border-style: solid;
+border-radius: 6px;
+border-width: 2px;
+border-color: #d4d9de;
+}
+
+.startDate {
+position: absolute;
+margin-top: 100px;
+margin-left: 7%;
+
+}
+
+.fromDate {
+position: absolute;
+padding-left: 1%;
+padding-right: 1%;
+margin-top: 120px;
+margin-left: 7%;
+width: 35%;
+height: 42px;
+border-style: solid;
+border-radius: 6px;
+border-width: 2px;
+border-color: #d4d9de;
+}
+
+.finDate {
+position: absolute;
+margin-top: 100px;
+margin-left: 49%;
+}
+
+.toDate {
+position: absolute;
+padding-left: 1%;
+padding-right: 1%;
+margin-top: 120px;
+margin-left: 49%;
+width: 35%;
+height: 42px;
+border-style: solid;
+border-radius: 6px;
+border-width: 2px;
+border-color: #d4d9de;
+}
+
+.submit {
+position: absolute;
+margin-top: 32%;
+margin-top-min: 220px;
+margin-left: 7%;
+width: 80%;
+height: 42px;
+border-style: none;
+border-radius: 6px;
+background-color: orange;
+color: white;
+font-size: 18px;
+}
+
+
+.submit:hover {
+background-color: #2596be;
+color: white;;
+
+}
+
+.footer {
+position: absolute;
+bottom: -120px;
+width: 100%;
+background-color: #2596be;
+color: white;
+text-align: center;
+}

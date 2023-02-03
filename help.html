@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+  <link href="help.css" rel="stylesheet">
+  <title>Aide / Nous contacter</title>
+  <!--navigation bar -->
+  <header>
+      <nav class="navbar">
+        <!--Logo -->
+        <a href="dogSitter.html" class="logo"><img src="Logo-Dog-Sitter.png" alt="Logo DogSitter" width="50"></a>
+
+        <!--Les liens dans la barre de navigation -->
+        <lu class="nav-links">
+          <a href="popup form.html" class="button-nav-chercher">Chercher un gardien</a>
+          <a href="inscription.html" class="button-nav">Devenir gardien d'animaux</a>
+          <li class="nav-item"><a href="inscription.html">&nbsp;&nbsp;&nbsp;&nbspS'inscrire&nbsp;&nbsp;</a></li>
+          <li class="nav-item"><a href="Connexion.html">Connectez-vous</a></li>
+          <li class="nav-item"><a href="help.html">Aide</a></li>
+        </lu>
+      </nav>
+  </header>
+</head>
+
+<body>
+<p class="Title">Envoyer une demande</p>
+
+<div class="container">
+  <form>
+    <label for="reason">Pourquoi nous contactez-vous aujourd'hui?</label>
+    <select id="reason" name="reason">
+      <option  value="Je veux annuler ma réservation">Je veux annuler ma réservation</option>
+      <option  value="Je veux changer ma réservation">Je veux changer ma réservation</option>
+      <option  value="J'ai un problème technique">J'ai un problème technique</option>
+      <option  value="J'ai une plainte concernant un utilisateur de DogSitter (propriétaire d'animal ou gardien)">J'ai une plainte concernant un utilisateur de DogSitter (propriétaire d'animal ou gardien)</option>
+      <option value="other">Autres</option>
+    </select>
+
+    <label id="text-checkbox" for="checkbox-email">Est-ce le courriel que vous utilisez pour votre compte DogSitter ? (si vous en avez déjà un)</label>
+    <input type="checkbox" id="checkbox-email" name="checkbox-email">
+
+    <label id="text-who" for="who">Êtes-vous un propriétaire d'animal ou un gardien?</label>
+    <select id="who" name="who">
+      <option  value="Gardien d'animaux">Gardien d'animaux</option>
+      <option  value="Propriétaire d'animal">Propriétaire d'animal</option>
+      <option value="other">Autres</option>
+    </select>
+
+  <label id="text-description" for="textbox">Saisissez les détails de votre demande.
+  <textarea id="textbox"></textarea>
+  </label>
+
+    <label id="nameText" for="nameBox">Prénom, Nom</label>
+    <input type="text"  id="nameBox" name="namEBox">
+
+    <label id="email-q" for="email">Adresse courriel</label>
+    <input type="email" id="email" name="email">
+
+    <label id="phonNumberText" for="phoneNumber">Numéro de téléphone</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber">
+
+    <label id="Submit-Button" for="SubmitButton"></label>
+    <input type="submit" id="SubmitButton" name="SubmitButton">
+  </form>
+</div>
+
+
+/*Footer */
+<footer>
+  <div class="footer">
+    <p>Copyright © 2023 DogSitter All Rights Reserved. Terms and Conditions and Privacy & Cookie Policy.</p>
+  </div>
+</footer>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

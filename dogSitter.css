@@ -203,14 +203,6 @@ color: white;
 
 }
 
-#closeMark{
-    width: 30px;
-    margin-top: 10px;
-    margin-left: 180px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    position: absolute;
- }
 
  .popup p {
     text-align: center;
@@ -235,14 +227,14 @@ height: 30px;
     height: 30px;
     }
 
-    .popup button {
+    #btn1 {
         font-size: 18px;
         background-color: #2596be;
         border: none;
-        margin-top: 20px;
+        margin-top: 40px;
         left: 25px;
         width: 80%;
-        height: 40px;
+        height: 35px;
         color: white;
         border-radius: 6px;
         cursor: pointer;
@@ -250,9 +242,30 @@ height: 30px;
 
     }
 
-    .popup button:hover{
+    #btn2 {
+        font-size: 18px;
+        background-color: white;
+        border: none;
+        margin-top: 10px;
+        left: 25px;
+        width: 80%;
+        height: 35px;
+        color:#2596be;
+        border-radius: 6px;
+        cursor: pointer;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+    }
+
+    #btn1:hover{
         background-color: #6fd649;
         border: none;
+    }
+
+    #btn2:hover{
+        background-color: #6fd649;
+        border: none;
+        color: white;
     }
 
     #closeMark:hover {
@@ -260,6 +273,66 @@ height: 30px;
         cursor: pointer;
     }
 
+
+    @media  screen and (max-width: 1100px) {
+
+        .popup {
+            position: fixed;
+            width: 50%;
+            height: 80%;
+        }
+        
+        
+        
+         .popup p {
+            margin-bottom: 60px;
+            font-size: 14px;
+         }
+        
+        
+        #name {
+        padding: 15px;
+        left: 25px;
+        width: 80%;
+        height: 30px;
+        }
+        
+        #email {
+            margin-top: 10px;
+            padding: 15px;
+            width: 80%;
+            height: 30px;
+            }
+        
+            .popup button {
+                margin-top: 80px;
+            }
+        
+    }
+
+    @media  (min-width: 1100px) and (max-width: 2000px) {
+
+        .popup {
+            position: fixed;
+            width: 40%;
+            height: 80%;
+        }
+
+        
+            .popup button {
+                margin-top: 80px;
+            }
+        
+    }
+
+    @media  (min-width: 2000px){
+
+        
+            .popup button {
+                margin-top: 160px;
+            }
+        
+    }
 
 
 

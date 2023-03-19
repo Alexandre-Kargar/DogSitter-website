@@ -192,7 +192,7 @@ flex: 1;
 text-decoration: none;
 background-color: #3b5998;
 border-radius: 6px;
-padding: 18px 120px;
+padding: 18px 108px;
 color: white;
 font-size: 18px;
 margin-top: 10px;
@@ -208,7 +208,7 @@ text-decoration: none;
 border-style: solid;
 border-width: 1px;
 border-radius: 6px;
-padding: 18px 130px;
+padding: 18px 116px;
 color: #666666;
 font-size: 18px;
 margin-top: 10px;
@@ -222,7 +222,7 @@ background-color: #FFFAF0;
 flex: 1;
 text-decoration: none;
 border-style: solid;
-padding: 18px 138px;
+padding: 18px 124px;
 border-width: 1px;
 border-radius: 6px;
 font-size: 18px;
@@ -254,52 +254,79 @@ width: 45%;
 margin-right: 0;
 }
 
-.Inscription-With-Email{
-background-color: orange;
-text-decoration: none;
-border-style: solid;
-padding: 18px 80px;
-border-width: 1px;
+.email {
+padding: 18px 126px;
 border-radius: 6px;
+border-width: 1px;
+font-size: 16px;
+color: #666666;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.password {
+padding: 18px 126px;
+border-radius: 6px;
+border-width: 1px;
+font-size: 16px;
+color: #666666;
+text-align: center;
+}
+
+.connexion-button {
+padding: 18px 170px;
+border-radius: 6px;
+border-width: 1px;
 font-size: 18px;
+background-color: orange;
 color: white;
+margin-top: 10px;
+border-color: orange;
 }
 
-.Inscription-With-Email:hover {
+.connexion-button:hover {
 background-color: #2596be;
-border-style: solid;
-color: white;;
+border-color: #2596be;
 }
 
 
-.line1 {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-top: 20px ;
-width: 100%
+.Forgot-password {
+text-decoration: none;
+color: #2596be;
+margin-top: 20px;
+}
+
+.Forgot-password:hover{
+text-decoration: underline;
 }
 
 .entier-line {
 border-top: 1px solid #bbb;
-width: 90%;
+width: 40%;
+margin-top: 20px;
 }
 
-.avez-vous-un-compte {
+
+.Title-bas-de-page {
 font-size: 36px;
+color: #666666;
+margin-top: 20px;
 }
 
-.link-connectez-vous{
-margin-top: -10px;
+.link-connexion {
 text-decoration: none;
 color: #2596be;
+}
+
+.link-connexion:hover{
+text-decoration: underline;
 }
 
 
 /*Footer */
 .footer {
 position: absolute;
-bottom: -250px;
+bottom: -450px;
 width: 100%;
 background-color: #2596be;
 color: white;
@@ -308,58 +335,81 @@ text-align: center;
 
 
 @media (max-width: 800px) {
- 
-    .inscription_form_Title {
-    font-size: 30px;
-    }
+
     
+    .inscription_form_Title {
+        width: 100%;
+    font-size: 30px;
+    text-align: center;
+    }
+
     
     .FaceBook-inscription-link {
         font-size: 16px;
-        width: 80%;
+        width: 100%;
         padding: 14px 50px;
         text-align: center;
     }
-
+ 
+    
     .Google-inscription-link {
         font-size: 16px;
-        width: 80%;
+        width: 100%;
         padding: 14px 50px;
         text-align: center;
-        }
+    }
 
     
     .Apple-inscription-link {
         font-size: 16px;
-        width: 80%;
+        width: 100%;
         padding: 14px 50px;
         text-align: center;
     }
     
-    .Inscription-With-Email{
+    .line {
+    width: 80%
+    }
+    
+
+    
+    .email {
         font-size: 16px;
-        width: 80%;
-        padding: 14px 10px;
+        width: 100%;
+        padding: 14px 50px;
         text-align: center;
     }
     
-    .Inscription-With-Email:hover {
-    background-color: #2596be;
-    border-style: solid;
-    color: white;;
+    .password {
+        font-size: 16px;
+        width: 100%;
+        padding: 14px 50px;
+        text-align: center;
     }
     
-    
-    .avez-vous-un-compte {
-    font-size: 30px;
+    .connexion-button {
+        font-size: 16px;
+        width: 100%;
+        padding: 14px 50px;
+        text-align: center;
     }
     
    
+    .entier-line {
+    width: 60%;
+    }
+    
+    .Title-bas-de-page {
+    font-size: 30px;
+    color: #666666;
+    margin-top: 20px;
+    }
+    
     
     
     /*Footer */
     .footer {
-        font-size: 12px;
-
-}
+    font-size: 12px;
+    }
+    
 }

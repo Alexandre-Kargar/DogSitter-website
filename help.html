@@ -5,22 +5,33 @@
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
   <link href="help.css" rel="stylesheet">
+  <script src="dogSitter.js" defer></script>
+
   <title>Aide / Nous contacter</title>
   <!--navigation bar -->
   <header>
-      <nav class="navbar">
-        <!--Logo -->
-        <a href="dogSitter.html" class="logo"><img src="Logo-Dog-Sitter.png" alt="Logo DogSitter" width="50"></a>
-
-        <!--Les liens dans la barre de navigation -->
-        <lu class="nav-links">
-          <a href="popup form.html" class="button-nav-chercher">Chercher un gardien</a>
-          <a href="inscription.html" class="button-nav">Devenir gardien d'animaux</a>
-          <li class="nav-item"><a href="inscription.html">&nbsp;&nbsp;&nbsp;&nbspS'inscrire&nbsp;&nbsp;</a></li>
-          <li class="nav-item"><a href="Connexion.html">Connectez-vous</a></li>
-          <li class="nav-item"><a href="help.html">Aide</a></li>
-        </lu>
-      </nav>
+    <nav class="navbar">
+      <!--Logo -->
+      
+         <div class="brand-title"> 
+          <a href="dogSitter.html" id="logo"><img src="Logo-Dog-Sitter.png" alt="Logo DogSitter" width="40px"></a>
+      </div>
+      
+      <a href="#" class="toggle-button" onclick="navResponsive()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </a>
+      <!--Les liens dans la barre de navigation -->
+      <div class="navbar-links" id="navbar-links">
+          <lu class="nav-links">
+              <a href="VoirGardiens.html" class="button-nav-chercher">Chercher un gardien</a>
+              <a href="inscription.html" class="button-nav">Devenir gardien d'animaux</a>
+              <li class="nav-item"><a href="inscription.html">S'inscrire</a></li>
+              <li class="nav-item"><a href="Connexion.html">Connectez-vous</a></li>
+              <li class="nav-item"><a href="help.html">Aide</a></li>
+          </lu>
+          </div></nav>
   </header>
 </head>
 
@@ -29,7 +40,7 @@
 
 <div class="container">
   <form>
-    <label for="reason">Pourquoi nous contactez-vous aujourd'hui?</label>
+    <label id="text-reason" for="reason">Pourquoi nous contactez-vous aujourd'hui?</label>
     <select id="reason" name="reason">
       <option  value="Je veux annuler ma réservation">Je veux annuler ma réservation</option>
       <option  value="Je veux changer ma réservation">Je veux changer ma réservation</option>

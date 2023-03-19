@@ -3,24 +3,33 @@
 <head>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="Stylesheet" type="text/css">
+  <script src="dogSitter.js" defer></script>
   <link rel="Stylesheet"  href="inscription.css">
   <title>Inscription DogSitter</title>
 
   <header>
     <nav class="navbar">
       <!--Logo -->
-
-      <a href="dogSitter.html" class="logo"><img src="Logo-Dog-Sitter.png" alt="Logo DogSitter" width="50"></a>
-
+      
+         <div class="brand-title"> 
+          <a href="dogSitter.html" id="logo"><img src="Logo-Dog-Sitter.png" alt="Logo DogSitter" width="40px"></a>
+      </div>
+      
+      <a href="#" class="toggle-button" onclick="navResponsive()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </a>
       <!--Les liens dans la barre de navigation -->
-      <lu class="nav-links">
-        <a href="popup form.html" class="button-nav-chercher">Chercher un gardien</a>
-        <a href="inscription.html" class="button-nav">Devenir gardien d'animaux</a>
-        <li class="nav-item"><a href="inscription.html">&nbsp;&nbsp;&nbsp;&nbspS'inscrire&nbsp;&nbsp;</a></li>
-        <li class="nav-item"><a href="Connexion.html">Connectez-vous</a></li>
-        <li class="nav-item"><a href="help.html">Aide</a></li>
-      </lu>
-    </nav>
+      <div class="navbar-links" id="navbar-links">
+          <lu class="nav-links">
+              <a href="VoirGardiens.html" class="button-nav-chercher">Chercher un gardien</a>
+              <a href="inscription.html" class="button-nav">Devenir gardien d'animaux</a>
+              <li class="nav-item"><a href="inscription.html">S'inscrire</a></li>
+              <li class="nav-item"><a href="Connexion.html">Connectez-vous</a></li>
+              <li class="nav-item"><a href="help.html">Aide</a></li>
+          </lu>
+          </div></nav>
   </header>
 </head>
 

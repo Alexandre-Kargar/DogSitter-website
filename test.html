@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>test</title>
+</head>
+<body>
+<header>
+    <h1>Entete de ma page</h1>
+</header>
+
+
+<main>
+    <article>
+
+        <h1 onmouseleave="this.style.color='black'"
+        onmouseover="this.style.color='red'"
+
+        ondblclick="myFunction()"> Mon titre</h1>
+   <p>Vous avez double-cliquez sur le titre <span id="span0">0</span> fois</p>
+    </article>
+
+    <script>
+function myFunction() {
+  document.getElementById("span0").innerHTML = ++compteur ;
+}
+</script>
+
+</main>
+</body>
+
+
+</html>

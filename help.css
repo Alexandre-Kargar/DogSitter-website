@@ -9,6 +9,7 @@
     box-sizing: inherit;
 }
 
+/*Barre de navigation */
 nav {
     position: fixed;
     width: 100%;
@@ -17,18 +18,20 @@ nav {
     padding-right: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     z-index: 1;
 }
 
-.logo {
-    display: inline-block;
+.brand-title {
+    margin: 8px;
+
 }
 
 
 .nav-links {
     list-style: none;
     display: flex;
+    margin-top: 25px;
 }
 
 .nav-item a {
@@ -78,150 +81,248 @@ background-color: orange;
 color: white;
 }
 
+.toggle-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px){
+
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        display: block;
+        width: 100%;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+       
+    }
+
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        width: 100%;
+        background-color: #2596be;
+        padding-top: 10px;
+        padding-left: 5px;
+        font-weight: normal;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .nav-links a:hover {
+        color: orange;
+        background-color: white;
+        font-weight: bold;
+        border-radius : 0px;
+        margin-left: 0px;
+    }
+
+    .toggle-button:hover .bar{
+        
+        background-color: Orange;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+
+    }
 
 .Title {
 position: absolute;
 color: #666666;
 font-size: 36px;
-padding: 100px;
+margin-top: 130px;
+width: 80%;
+left: 10%;
 }
 
 .container {
 position: absolute;
-padding: 100px;
-margin-top: 130px;
+display: flex;
+flex-direction: column;
+margin-top: 200px;
 color: #666666;
 width: 100%;
 }
 
+#text-reason{
+    position: absolute;
+    color: #666666;
+    width: 80%;
+    font-size: 16px;
+    left: 10%;
+}
+
 #reason {
+width: 80%;
+left: 10%;
+padding: 10px;
 position: absolute;
-padding: 10px 6px;
 margin-top: 30px;
 font-size: 16px;
-margin-left: -306px;
 line-height: 10px;
+max-width: 80%;
 border-radius: 6px;
 }
 
+#text-who {
+    position: absolute;
+    color: #666666;
+    width: 80%;
+    font-size: 16px;
+    margin-top: 110px;
+    left: 10%;
+    }
+    
+    #who {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    padding: 10px;
+    margin-top: 140px;
+    font-size: 16px;
+    border-radius: 6px;
+    }
+
+    
 #text-checkbox {
 position: absolute;
 margin-top: 220px;
-margin-left: -290px;
+width: 80%;
+left: 13%;
 }
 
 #checkbox-email {
 position: absolute;
-margin-top: 221px;
-margin-left: -312px;
+margin-top: 220px;
+left: 10%;
 }
 
 input#checkbox-email {
-width: 15px;
-height: 15px;
-}
-
-
-#text-who {
-position: absolute;
-color: color: #666666;;
-font-size: 16px;
-margin-left: -310px;
-margin-top: 110px;
-}
-
-#who {
-position: absolute;
-padding: 10px;
-padding-right: 475px;
-margin-top: 140px;
-font-size: 16px;
-margin-left: -310px;
-line-height: 10px;
-border-radius: 6px;
+width: 17px;
+height: 17px;
 }
 
 
 #text-description {
 position: absolute;
 margin-top: 280px;
-margin-left: -314px;
+width: 80%;
+left: 10%;
 }
 
 #textbox {
 position: absolute;
 margin-top: 30px;
-margin-left: -280px;
 border-radius: 6px;
 height: 100px;
-padding: 10px 10px;
-padding-right: 486px;
+max-height: 130px;
+min-height: 50px;
+width: 100%;
+max-width: 100%;
+max-width: 100%;
+left: 0%;
 }
 
 
 #nameText {
 position: absolute;
 margin-top: 460px;
-margin-left: -314px;
+width: 80%;
+left: 10%;
 }
 
 #nameBox {
-position: absolute;
-border-radius: 6px;
-border-width: 1px;
-margin-top: 490px;
-padding: 10px 10px;
-height: 42px;
-padding-right: 482px;
-margin-left: -314px
-}
-
-#email {
-position: absolute;
-padding: 10px;
-padding-right: 454px;
-margin-top: 610px;
-font-size: 16px;
-margin-left: -314px;
-border-radius: 6px;
-border-width: 1px;
-text-align: left;
+    border-color: #666666;
+    border-width: 1px;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    padding: 10px;
+    margin-top: 490px;
+    font-size: 16px;
+    border-radius: 6px;
 }
 
 #email-q{
-position: absolute;
-margin-top: 580px;
-color: #666666;
-margin-left: -314px;
+    position: absolute;
+    margin-top: 580px;
+    width: 80%;
+    left: 10%;  
+    }
+
+#email {
+    border-color: #666666;
+    border-width: 1px;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    padding: 10px;
+    margin-top: 610px;
+    font-size: 16px;
+    border-radius: 6px;
 }
+
+
 
 #phonNumberText {
 position: absolute;
 margin-top: 700px;
-margin-left: -314px;
+width: 80%;
+left: 10%; 
 }
 
 #phoneNumber {
-position: absolute;
-margin-top: 730px;
-margin-left: -314px;
-border-radius: 6px;
-border-width: 1px;
-height: 42px;
-padding: 10px 10px;
-padding-right: 486px;
+    border-color: #666666;
+    border-width: 1px;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    padding: 10px;
+    margin-top: 730px;
+    font-size: 16px;
+    border-radius: 6px;
 }
 
 #SubmitButton {
-position: absolute;
-margin-top: 840px;
-margin-left: -314px;
-background-color: orange;
-border-radius: 6px;
-border-color: orange;
-padding: 12px 70px;
-color: white;
-
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    padding: 10px;
+    margin-top: 840px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: orange;
+    border-color: orange;
+    color: white;
 }
 
 #SubmitButton:hover {
@@ -237,4 +338,16 @@ width: 100%;
 background-color: #2596be;
 color: white;
 text-align: center;
+}
+
+@media (max-width: 1000px) {
+    
+    #text-checkbox {
+        left: 16%;
+        }
+
+        .footer {
+            font-size: 12px;
+            }
+
 }

@@ -173,7 +173,7 @@ color: white;
 .popup {
     position: fixed;
     width: 40%;
-    height: 65%;
+    height: 300px;
     background-color: orange;
     border-radius: 6px;
     top: 0%;
@@ -231,7 +231,7 @@ height: 30px;
         font-size: 18px;
         background-color: #2596be;
         border: none;
-        margin-top: 40px;
+        margin-top: 80px;
         left: 25px;
         width: 80%;
         height: 35px;
@@ -279,7 +279,7 @@ height: 30px;
         .popup {
             position: fixed;
             width: 50%;
-            height: 80%;
+            height: 520px;
         }
         
         
@@ -315,7 +315,7 @@ height: 30px;
         .popup {
             position: fixed;
             width: 40%;
-            height: 80%;
+            height: 500px;
         }
 
         
@@ -327,12 +327,16 @@ height: 30px;
 
     @media  (min-width: 2000px){
 
+        .popup {
+            position: fixed;
+            width: 40%;
+            height: 500px;
+        }
         
-            .popup button {
-                margin-top: 160px;
-            }
-        
+           
     }
+
+    
 
 
 

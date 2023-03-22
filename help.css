@@ -351,3 +351,109 @@ text-align: center;
             }
 
 }
+
+@media (min-width:30px) and (max-width:505px){
+    .Title {
+        font-size: 30px;
+        }
+
+        #who {
+            position: absolute;
+            width: 80%;
+            left: 10%;
+            padding: 10px;
+            margin-top: 160px;
+            font-size: 16px;
+            border-radius: 6px;
+            }
+        
+                
+                .container {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                margin-top: 200px;
+                color: #666666;
+                width: 100%;
+                }
+                
+                #text-reason{
+                    font-size: 18px;
+                }
+
+                #reason {
+                    margin-top: 50px;
+
+                }
+
+                
+                #text-who {
+                    font-size: 18px;
+                    margin-top: 120px;
+                    }
+                    
+                    #who {
+                    margin-top: 170px;
+
+                    }
+                
+                    
+                #text-checkbox {
+                margin-top: 250px;
+                    font-size: 18px;
+                    left: 18%;
+                    width: 70%;
+
+                }
+                
+                #checkbox-email {
+                margin-top: 250px;
+                }
+                
+                input#checkbox-email {
+                height: 17px;
+                }
+                
+                
+                #text-description {
+                margin-top: 360px;
+                    font-size: 18px;
+                }
+                
+                
+                #nameText {
+                margin-top: 540px;
+                font-size: 18px;
+                }
+                
+                #nameBox {
+                    margin-top: 570px;
+                }
+                
+                #email-q{
+                    font-size: 18px;
+                    margin-top: 650px;
+                    width: 80%; 
+                    }
+                
+                #email {
+                    margin-top: 680px;
+                }
+                
+                
+                
+                #phonNumberText {
+                font-size: 18px;
+                margin-top: 760px;
+                }
+                
+                #phoneNumber {
+                    margin-top: 790px;
+                }
+                
+                #SubmitButton {
+                    margin-top: 880px;
+                    font-size: 18px;
+                }
+
+}

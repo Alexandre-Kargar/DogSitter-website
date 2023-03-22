@@ -1,0 +1,58 @@
+ <?xml version="1.0" encoding="utf-8"?>
+
+ 
+ <Villes>
+    <ville>Montréal</ville>
+    <ville>Québec</ville>
+    <ville>Laval</ville>
+    <ville>Gatineau</ville>
+    <ville>Longueuil</ville>
+    <ville>Sherbrooke</ville>
+    <ville>Saguenay</ville>
+    <ville>Lévis</ville>
+    <ville>Trois-Rivières</ville>
+    <ville>Terrebonne</ville>
+    <ville>	Saint-Jean-sur-Richelieu</ville>
+    <ville>Brossard</ville>
+    <ville>Repentigny</ville>
+    <ville>Saint-Jérôme</ville>
+    <ville>Drummondville</ville>
+    <ville>Granby</ville>
+    <ville>Blainville</ville>
+    <ville>Saint-Hyacinthe</ville>
+    <ville>Dollard-Des Ormeaux</ville>
+    <ville>Mirabel</ville>
+    <ville>Rimouski</ville>
+    <ville>Shawinigan</ville>
+    <ville>Châteauguay</ville>
+    <ville>Mascouche</ville>
+    <ville>Victoriaville</ville>
+    <ville>Saint-Eustache</ville>
+    <ville>Boucherville</ville>
+    <ville>Rouyn-Noranda</ville>
+    <ville>Salaberry-de-Valleyfield</ville>
+    <ville>Vaudreuil-Dorion</ville>
+    <ville>Sorel-Tracy</ville>
+    <ville>Côte-Saint-Luc</ville>
+    <ville>Val-d'Or</ville>
+    <ville>Saint-Georges</ville>
+    <ville>Pointe-Claire</ville>
+    <ville>Alma</ville>
+    <ville>Sainte-Julie</ville>
+    <ville>Chambly</ville>
+    <ville>Saint-Constant</ville>
+    <ville>Boisbriand</ville>
+    <ville>Saint-Bruno-de-Montarville</ville>
+    <ville>Sainte-Thérèse</ville>
+    <ville>Magog</ville>
+    <ville>Thetford Mines</ville>
+    <ville>Sept-Îles</ville>
+    <ville>La Prairie</ville>
+    <ville>Saint-Lambert</ville>
+    <ville>L'Assomption</ville>
+    <ville>Belœil</ville>
+    <ville>Varennes</ville>
+</villes>
+
+
+

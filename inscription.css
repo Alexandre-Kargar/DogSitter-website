@@ -363,3 +363,18 @@ text-align: center;
 
 }
 }
+
+
+@media (min-width: 300px) and (max-width: 500px) {
+
+    .inscription_form_Title {
+        font-size: 30px;
+
+        }
+
+    .avez-vous-un-compte {
+        font-size: 30px;
+        }
+    
+    
+}

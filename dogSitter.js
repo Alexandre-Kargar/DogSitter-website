@@ -34,43 +34,46 @@ function closePopup(){
 }
 
 
-//Programme pour lire le ficheir xml avec la liste des villes et aficher les suggestions selon lest lettres tapées
-var VilleResultat = [];
-$(document).on('keyup', '#villeSearch', function(){
-  var keyvalue = $("#villeSearch").val();
+//Programme pour lire le ficheir json avec la liste des villes et aficher les suggestions selon lest lettres tapées
+/*
+const listEl = document.getElementById("ListeVilles");
 
-  var xhttp;
-  xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200){
-      VilleResultat = [];
-      afficheVilles(this, keyvalue);
+fetch('./villes.json')
+    .then(res => res.json());
+    .then(villes => {
+      villes.forEach(post => {
+          listEl.insertAdjacentHTML('beforeend', <option>${post.ville}</option>);
+        
+      });
+    });*/
+
+    function loadJsonFile(){
+    var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       var rep = JSON.parse(xhttp.responseText);
+        //console.log(rep.villes);
+        var villes = rep.villes;
+        var output = '';
+
+       for (var i = 0; i < villes.length; i++){
+
+        output += '<option>' + villes[i].ville+'</option>';
+
+        /*
+          output = villes[i].ville;
+          //console.log(output);
+          
+          var myList = document.getElementById("ListeVilles");
+          var option =  document.createElement("option");
+          option.text = output;
+          myList.add(option);*/
+
+       }
+       document.getElementById("ListeVilles").innerHTML = output;
     }
-  };
-  xhttp.open("GET", "villes.xml", true);
-  xhttp.send();      
-});
-
-function afficheVilles (xml, key) {
-  var x, i, xmlDoc, key;
-  xmlDoc = xml.responseXML;
-  x = xmlDoc.getElementsByTagName("ville");
-  var compteur = 0;
-  for (i = 0; i < x.length; i++){
-      var value = x[i].childNodes[0].nodeValue.trim();
-      var pattern = value.substring(0 , key.length);
-        if (key.toUpperCase() == pattern.toUpperCase() && compteur < 10){
-          VilleResultat.push(value);
-          compteur++;
-        }
-  }
-  $("#villeSearch").autocomplete({
-    source: VilleResultat
-  });
+};
+xhttp.open("GET", "villes.json", true);
+xhttp.send();
 }
-
-$( function(){
-  $("#villeSearch").autocomplete({
-    source: VilleResultat
-});
-});

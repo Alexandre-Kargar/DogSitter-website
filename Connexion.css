@@ -4,6 +4,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+
    }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -155,106 +156,52 @@ color: white;
 
     }
 
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Connexion-Email {
+
+        align-items: center;
+    }
+
 /* formulaire */
-.inscription_form {
+.Connexion_form {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
+    text-align: center;
 }
 
-.inscription_form_Title {
+
+.Connexion_form_Title {
 flex: 1;
 font-size: 36px;
 color: #666666;
 margin-top: 150px;
+width: 80%;
+text-align: center;
+
 }
 
-.inscription_form_subtitle {
+.Connexion_form_subtitle {
 flex: 1;
 font-size: 22px;
 color: #666666;
 margin-top: -10px ;
+width: 80%;
+text-align: center;
+
 }
 
-.links-inscriptions{
-display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: #666666;
-}
 
-.FaceBook-inscription-link {
-flex: 1;
-text-decoration: none;
-background-color: #3b5998;
-border-radius: 6px;
-padding: 18px 108px;
-color: white;
-font-size: 18px;
-margin-top: 10px;
-}
-
-.FaceBook-inscription-link:hover {
-background-color: #29487D;
-}
-
-.Google-inscription-link {
-flex: 1;
-text-decoration: none;
-border-style: solid;
-border-width: 1px;
-border-radius: 6px;
-padding: 18px 116px;
-color: #666666;
-font-size: 18px;
-margin-top: 10px;
-}
-
-.Google-inscription-link:hover {
-background-color: #FFFAF0;
-}
-
-.Apple-inscription-link {
-flex: 1;
-text-decoration: none;
-border-style: solid;
-padding: 18px 124px;
-border-width: 1px;
-border-radius: 6px;
-font-size: 18px;
-margin-top: 10px;
-color: #666666;
-}
-
-.Apple-inscription-link:hover {
-background-color: #FFFAF0;
-}
-
-.line {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-top: 10px ;
-width: 90%
-}
-
-hr.left-divider {
-border-top: 1px solid #bbb;
-width: 45%;
-margin-left: 0;;
-}
-
-hr.right-divider {
-border-top: 1px solid #bbb;
-width: 45%;
-margin-right: 0;
-}
 
 .email {
+margin-top: 50px;
 padding: 18px 126px;
 border-radius: 6px;
 border-width: 1px;
@@ -262,7 +209,14 @@ font-size: 16px;
 color: #666666;
     text-align: center;
     margin-bottom: 10px;
+    width: 40%;
+    background-color: #FFFAF0;
+
 }
+
+.email:focus {
+    background-color: white;
+    }
 
 .password {
 padding: 18px 126px;
@@ -271,7 +225,13 @@ border-width: 1px;
 font-size: 16px;
 color: #666666;
 text-align: center;
+width: 40%;
+background-color: #FFFAF0;
 }
+
+.password:focus {
+    background-color: white;
+    }
 
 .connexion-button {
 padding: 18px 170px;
@@ -280,20 +240,30 @@ border-width: 1px;
 font-size: 18px;
 background-color: orange;
 color: white;
-margin-top: 10px;
+margin-top: 50px;
 border-color: orange;
+width: 40%;
+
 }
 
 .connexion-button:hover {
 background-color: #2596be;
 border-color: #2596be;
+cursor: pointer;
+
 }
+
+.connexion-button:active {
+    transform: scale(0.98);
+    }
 
 
 .Forgot-password {
 text-decoration: none;
 color: #2596be;
 margin-top: 20px;
+width: 40%;
+
 }
 
 .Forgot-password:hover{
@@ -304,6 +274,8 @@ text-decoration: underline;
 border-top: 1px solid #bbb;
 width: 40%;
 margin-top: 20px;
+width: 40%;
+
 }
 
 
@@ -311,6 +283,9 @@ margin-top: 20px;
 font-size: 36px;
 color: #666666;
 margin-top: 20px;
+text-align: center;
+width: 40%;
+
 }
 
 .link-connexion {
@@ -326,7 +301,7 @@ text-decoration: underline;
 /*Footer */
 .footer {
 position: absolute;
-bottom: -450px;
+bottom: -350px;
 width: 100%;
 background-color: #2596be;
 color: white;
@@ -337,35 +312,13 @@ text-align: center;
 @media (max-width: 800px) {
 
     
-    .inscription_form_Title {
-        width: 100%;
+    .Connexion_form_Title {
+        width: 80%;
     font-size: 30px;
     text-align: center;
     }
 
-    
-    .FaceBook-inscription-link {
-        font-size: 16px;
-        width: 100%;
-        padding: 14px 50px;
-        text-align: center;
-    }
- 
-    
-    .Google-inscription-link {
-        font-size: 16px;
-        width: 100%;
-        padding: 14px 50px;
-        text-align: center;
-    }
 
-    
-    .Apple-inscription-link {
-        font-size: 16px;
-        width: 100%;
-        padding: 14px 50px;
-        text-align: center;
-    }
     
     .line {
     width: 80%
@@ -375,21 +328,21 @@ text-align: center;
     
     .email {
         font-size: 16px;
-        width: 100%;
+        width: 80%;
         padding: 14px 50px;
         text-align: center;
     }
     
     .password {
         font-size: 16px;
-        width: 100%;
+        width: 80%;
         padding: 14px 50px;
         text-align: center;
     }
     
     .connexion-button {
         font-size: 16px;
-        width: 100%;
+        width: 80%;
         padding: 14px 50px;
         text-align: center;
     }
@@ -403,6 +356,8 @@ text-align: center;
     font-size: 30px;
     color: #666666;
     margin-top: 20px;
+    width: 80%;
+
     }
     
     

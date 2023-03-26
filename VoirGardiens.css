@@ -5,7 +5,9 @@
  html, body {
     font-family: Sans-serif;
        box-sizing: border-box;
-       background-color: #FFFAF0;
+       /*background-color: #FFFAF0;*/
+       background-color: white;
+
      }
   *, *::before, *::after {
       box-sizing: inherit;

@@ -25,7 +25,6 @@ nav {
     z-index: 1;
 }
 
-
 .brand-title {
     margin: 8px;
 
@@ -459,12 +458,7 @@ padding: 10px 30px
 #soumettre:hover {
 background-color: #2596be;
 color: white;
-cursor: pointer;
 }
-
-#soumettre:active {
-    transform: scale(0.98);
-    }
 
 
 @media  (max-width: 1000px){

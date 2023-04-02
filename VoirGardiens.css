@@ -5,9 +5,7 @@
  html, body {
     font-family: Sans-serif;
        box-sizing: border-box;
-       /*background-color: #FFFAF0;*/
-       background-color: white;
-
+       background-color: #FFFAF0;
      }
   *, *::before, *::after {
       box-sizing: inherit;
@@ -196,7 +194,7 @@
         margin-top: 30px;
         background-color: white;
         width: 30%;
-        height: 350px;
+        height: 330px;
         border-radius: 6px;
         transition: transform .2s;
         color: #666666;

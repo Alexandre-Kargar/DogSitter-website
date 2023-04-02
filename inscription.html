@@ -25,34 +25,35 @@
       <!--Les liens dans la barre de navigation -->
       <div class="navbar-links" id="navbar-links">
           <lu class="nav-links">
-              <a href="annonces.php" class="button-nav-chercher">Chercher un gardien</a>
+              <a href="VoirGardiens.html" class="button-nav-chercher">Chercher un gardien</a>
               <a href="inscription.html" class="button-nav">Devenir gardien d'animaux</a>
               <li class="nav-item"><a href="inscription.html">S'inscrire</a></li>
-              <li class="nav-item"><a href="login.php">Connectez-vous</a></li>
+              <li class="nav-item"><a href="Connexion.html">Connectez-vous</a></li>
               <li class="nav-item"><a href="help.html">Aide</a></li>
-              <li class="nav-item"><a href="index.php">Profil</a></li> 
-            </lu>
+          </lu>
           </div></nav>
   </header>
 </head>
 
 <body>
 
-<form class="inscription_form"  action="process-signup.php" method="post">
+<div class="inscription_form">
   <p class="inscription_form_Title">Inscrivez-vous sur DogSitter</p>
   <p class="inscription_form_subtitle">C'est gratuit !</p>
-  <input type="text" id="fName" placeholder="Prénom" required name="fname">
-  <input type="text" id="lName" placeholder="Nom" required name="lname">
-  <input type="email" class="email" placeholder="Adresse courriel" required name="email">
-  <input type="password" class="password" placeholder="Password" required name="passeword">
+  <input type="text" id="fName" placeholder="Votre prénom">
+  <input type="text" id="lName" placeholder="Votre nom">
+  <input type="email" class="email" placeholder="Courriel">
+  <input type="password" class="password" placeholder="Password">
 
 
   <input type="submit" class="connexion-button" value="S'inscrire">
     <hr class="entier-line">
     <p class="avez-vous-un-compte">Vous avez déjà un compte ?</p>
-    <a class="link-connectez-vous" href="login.php">Se connecter</a>
-</form>
+    <a class="link-connectez-vous" href="Connexion.html">Se connecter</a>
+  </div>
     
+
+  </form>
 </div>
 
 <div class="separation"></div>

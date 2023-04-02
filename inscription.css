@@ -162,7 +162,6 @@ color: white;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    text-align: center;
 
 }
 
@@ -193,6 +192,7 @@ display: flex;
 
 #fName {
     margin-top: 20px;
+    padding: 18px 126px;
     border-radius: 6px;
     border-width: 1px;
     font-size: 16px;
@@ -200,16 +200,11 @@ display: flex;
         text-align: center;
         margin-bottom: 10px;
         width: 40%;
-        background-color: #FFFAF0;
-        height: 50px;
 }
-
-#fName:focus {
-    background-color: white;
-    }
 
 #lName {
     margin-top: 0px;
+    padding: 18px 126px;
     border-radius: 6px;
     border-width: 1px;
     font-size: 16px;
@@ -217,16 +212,11 @@ display: flex;
         text-align: center;
         margin-bottom: 10px;
         width: 40%;
-        background-color: #FFFAF0;
-        height: 50px;
 }
-
-#lName:focus {
-    background-color: white;
-    }
 
 .email {
     margin-top: 0px;
+    padding: 18px 126px;
     border-radius: 6px;
     border-width: 1px;
     font-size: 16px;
@@ -234,53 +224,34 @@ display: flex;
         text-align: center;
         margin-bottom: 10px;
         width: 40%;
-        background-color: #FFFAF0;
-        height: 40px;
-        height: 50px;
     }
-
-    .email:focus {
-        background-color: white;
-        }
     
     .password {
+    padding: 18px 126px;
     border-radius: 6px;
     border-width: 1px;
     font-size: 16px;
     color: #666666;
     text-align: center;
     width: 40%;
-    background-color: #FFFAF0;
-    height: 50px;
     }
-
-    .password:focus {
-        background-color: WHITE;
-        }
-
     
     .connexion-button {
-    text-align: center;
+    padding: 18px 170px;
     border-radius: 6px;
     border-width: 1px;
     font-size: 18px;
     background-color: orange;
     color: white;
-    margin-top: 50px;
+    margin-top: 10px;
     border-color: orange;
     width: 40%;
-    height: 50px;
     }
     
     .connexion-button:hover {
     background-color: #2596be;
     border-color: #2596be;
-    cursor: pointer;
     }
-
-    .connexion-button:active {
-        transform: scale(0.98);
-        }
 
 .entier-line {
 border-top: 1px solid #bbb;
@@ -304,7 +275,7 @@ text-align: center;
 /*Footer */
 .footer {
 position: absolute;
-bottom: -380px;
+bottom: -250px;
 width: 100%;
 background-color: #2596be;
 color: white;
@@ -324,28 +295,28 @@ text-align: center;
     }
         
         #fName {
-                width: 80%;
+                width: 60%;
         }
         
         #lName {
-                width: 80%;
+                width: 60%;
         }
         
         .email {
-                width: 80%;
+                width: 60%;
             }
             
             .password {
-            width: 80%;
+            width: 60%;
             }
             
             .connexion-button {
-            width: 80%;
+            width: 60%;
             }
             
         
         .entier-line {
-        width: 80%;
+        width: 60%;
         }
         
         .avez-vous-un-compte {
@@ -368,14 +339,9 @@ text-align: center;
 
 @media (min-width: 300px) and (max-width: 500px) {
 
-    .inscription_form {
-        text-align: center;
-    
-    }
-
     .inscription_form_Title {
         font-size: 30px;
-        text-align: center;
+
         }
 
     .avez-vous-un-compte {

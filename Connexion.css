@@ -4,7 +4,6 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     height: 1000px;
 
    }
 *, *::before, *::after {
@@ -101,7 +100,7 @@ color: white;
     border-radius: 10px;
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1000px){
 
 
     .navbar {
@@ -168,7 +167,7 @@ color: white;
     }
 
 /* formulaire */
-.Connexion_form {
+.inscription_form {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -178,26 +177,26 @@ color: white;
     text-align: center;
 }
 
-.container {
-    margin-top: 100px;
-}
-.Connexion_form_Title {
+.inscription_form_Title {
 flex: 1;
 font-size: 36px;
 color: #666666;
 margin-top: 150px;
 width: 80%;
 text-align: center;
+
 }
 
-
-.Connexion_form_subtitle {
+.inscription_form_subtitle {
 flex: 1;
 font-size: 22px;
 color: #666666;
+margin-top: -10px ;
 width: 80%;
 text-align: center;
+
 }
+
 
 
 .email {
@@ -207,16 +206,11 @@ border-radius: 6px;
 border-width: 1px;
 font-size: 16px;
 color: #666666;
-text-align: center;
-margin-bottom: 10px;
-width: 40%;
-background-color: #FFFAF0;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 40%;
+
 }
-
-
-.email:focus {
-    background-color: white;
-    }
 
 .password {
 padding: 18px 126px;
@@ -226,47 +220,26 @@ font-size: 16px;
 color: #666666;
 text-align: center;
 width: 40%;
-background-color: #FFFAF0;
+
 }
 
-.password:focus {
-    background-color: white;
-    }
-
 .connexion-button {
+padding: 18px 170px;
 border-radius: 6px;
 border-width: 1px;
 font-size: 18px;
 background-color: orange;
 color: white;
-margin-top: 50px;
+margin-top: 10px;
 border-color: orange;
 width: 40%;
-height: 50px;
-}
 
+}
 
 .connexion-button:hover {
 background-color: #2596be;
 border-color: #2596be;
-cursor: pointer;
 }
-
-.button1{
-    border-radius: 6px;
-    border-width: 1px;
-    font-size: 18px;
-    background-color: orange;
-    color: white;
-    margin-top: 50px;
-    border-color: orange;
-    width: 40%;
-    height: 20px;
-}
-
-.connexion-button:active {
-    transform: scale(0.98);
-    }
 
 
 .Forgot-password {
@@ -311,19 +284,19 @@ text-decoration: underline;
 
 /*Footer */
 .footer {
-position: relative;
+position: absolute;
+bottom: -450px;
 width: 100%;
 background-color: #2596be;
 color: white;
 text-align: center;
-margin-top: 300px;
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
 
     
-    .Connexion_form_Title {
+    .inscription_form_Title {
         width: 80%;
     font-size: 30px;
     text-align: center;
@@ -352,7 +325,10 @@ margin-top: 300px;
     }
     
     .connexion-button {
+        font-size: 16px;
         width: 80%;
+        padding: 14px 50px;
+        text-align: center;
     }
     
    

@@ -162,6 +162,7 @@ color: white;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    text-align: center;
 
 }
 
@@ -192,7 +193,6 @@ display: flex;
 
 #fName {
     margin-top: 20px;
-    padding: 18px 126px;
     border-radius: 6px;
     border-width: 1px;
     font-size: 16px;
@@ -201,6 +201,7 @@ display: flex;
         margin-bottom: 10px;
         width: 40%;
         background-color: #FFFAF0;
+        height: 50px;
 }
 
 #fName:focus {
@@ -209,7 +210,6 @@ display: flex;
 
 #lName {
     margin-top: 0px;
-    padding: 18px 126px;
     border-radius: 6px;
     border-width: 1px;
     font-size: 16px;
@@ -218,6 +218,7 @@ display: flex;
         margin-bottom: 10px;
         width: 40%;
         background-color: #FFFAF0;
+        height: 50px;
 }
 
 #lName:focus {
@@ -226,7 +227,6 @@ display: flex;
 
 .email {
     margin-top: 0px;
-    padding: 18px 126px;
     border-radius: 6px;
     border-width: 1px;
     font-size: 16px;
@@ -235,6 +235,8 @@ display: flex;
         margin-bottom: 10px;
         width: 40%;
         background-color: #FFFAF0;
+        height: 40px;
+        height: 50px;
     }
 
     .email:focus {
@@ -242,7 +244,6 @@ display: flex;
         }
     
     .password {
-    padding: 18px 126px;
     border-radius: 6px;
     border-width: 1px;
     font-size: 16px;
@@ -250,16 +251,16 @@ display: flex;
     text-align: center;
     width: 40%;
     background-color: #FFFAF0;
+    height: 50px;
     }
 
     .password:focus {
         background-color: WHITE;
         }
-    
-    
+
     
     .connexion-button {
-    padding: 18px 170px;
+    text-align: center;
     border-radius: 6px;
     border-width: 1px;
     font-size: 18px;
@@ -268,13 +269,13 @@ display: flex;
     margin-top: 50px;
     border-color: orange;
     width: 40%;
+    height: 50px;
     }
     
     .connexion-button:hover {
     background-color: #2596be;
     border-color: #2596be;
     cursor: pointer;
-
     }
 
     .connexion-button:active {
@@ -323,28 +324,28 @@ text-align: center;
     }
         
         #fName {
-                width: 60%;
+                width: 80%;
         }
         
         #lName {
-                width: 60%;
+                width: 80%;
         }
         
         .email {
-                width: 60%;
+                width: 80%;
             }
             
             .password {
-            width: 60%;
+            width: 80%;
             }
             
             .connexion-button {
-            width: 60%;
+            width: 80%;
             }
             
         
         .entier-line {
-        width: 60%;
+        width: 80%;
         }
         
         .avez-vous-un-compte {
@@ -367,9 +368,14 @@ text-align: center;
 
 @media (min-width: 300px) and (max-width: 500px) {
 
+    .inscription_form {
+        text-align: center;
+    
+    }
+
     .inscription_form_Title {
         font-size: 30px;
-
+        text-align: center;
         }
 
     .avez-vous-un-compte {

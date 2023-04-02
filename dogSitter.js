@@ -77,3 +77,5 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "villes.json", true);
 xhttp.send();
 }
+
+

@@ -1,28 +1,21 @@
 
- 
- 
- 
- html, body {
+html, body {
     font-family: Sans-serif;
+       margin: 0;
+       padding: 0;
        box-sizing: border-box;
-       /*background-color: #FFFAF0;*/
-       background-color: white;
+       height: 700px;
 
+  
      }
   *, *::before, *::after {
       box-sizing: inherit;
   }
   
-  
-  .navbar {
-    width: 100%;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-
-  }
+  /*Barre de navigation */
   nav {
       position: fixed;
+      width: 100%;
       background-color: #2596be;
       padding-left: 30px;
       padding-right: 30px;
@@ -109,17 +102,15 @@
       border-radius: 10px;
   }
   
-
-
-
-  @media (max-width: 1000px){
+  @media (max-width: 1100px){
+  
   
       .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        display: block;
-        width: 100%;
-    }
+          flex-direction: column;
+          align-items: flex-start;
+          display: block;
+          width: 100%;
+      }
   
       .toggle-button {
           display: flex;
@@ -163,108 +154,98 @@
       .navbar-links.active {
           display: flex;
       }
-
-
-      .footer {
-        font-size: 12px;
-        }
+  
+  
       }
+  
+      body {
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .Connexion-Email {
+  
+          align-items: center;
+      }
+  
+  /* formulaire */
+  .Connexion_form {
+    flex: 1;
+    position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+  }
 
-      #title {
-        font-size: 48px;
-        color: #666666;
-        top: 80px;
-        text-align: center;
+  .container {
+    margin-top: 200px;
+}
+  
+  .subtitle{
+    position: relative;
+    flex: 1;
+  font-size: 24px;
+  color: #666666;
+  width: 80%;
+  text-align: center;
+  margin-bottom: -200px;
+  } 
+  
+  #b1 {
+    margin-top: 250px;
+  }
+      .link-button{
         position: relative;
-      }
-
-      #containerAnnonce{
-        padding-top: 80px;
-        width: 100%;
-        height: auto;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-flow: wrap;
-
-        margin-bottom: 80px;
-      }
-
-      #containerAnnonce div {
-        padding: 30px;
-        margin-top: 30px;
-        background-color: white;
-        width: 30%;
-        height: 350px;
         border-radius: 6px;
-        transition: transform .2s;
-        color: #666666;
-        box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
-
-
+        border-width: 1px;
+        font-size: 18px;
+        background-color: orange;
+        color: white;
+        margin-top: 10px;
+        border-color: orange;
+        height: 40px;
+        width: 20%;
       }
-
-      #containerAnnonce div:hover{
-        -ms-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
+  
+      .link-button:hover {
+  background-color: #2596be;
+  border-color: #2596be;
+  cursor: pointer;
+  }
+  
+  .Title {
+  font-size: 36px;
+  color: #666666;
+  margin-top: 150px;
+  width: 80%;
+  text-align: center;
+  }
+  
+  .link {
+    margin-top: -500px;
+  }
+  
+  .footer1 {
+  height: 60px;
+  position: relative;
+  width: 100%;
+  background-color: #2596be;
+  color: white;
+  text-align: center;
+  margin-top: 400px;
+  }
+  @media (min-width: 300px) and (max-width: 1000px) {
+  
+    .link-button{
+        width: 50%;
       }
-
-
-
-      .imageAnnonce{
-        width: 60px;
-        max-width: 60px;
-        max-height: 60px;
-        min-height: 60px;
-        min-width: 60px;
-      }
-
-      
-        /*Footer */
-.footer {
-    position: absolute;
-    margin-top: auto;    
-    width: 100%;
-    background-color: #2596be;
-    color: white;
-    text-align: center;
-    left: 0px;
-
-    }
-
-
-    @media screen and (max-width: 1350px) {
-
-        #containerAnnonce div {
-            width: 30%;
-          }
-
-    }
-
-    @media screen and (max-width: 1200px) {
-
-        #containerAnnonce div {
-            width: 45%;
-          }
-
-          #title {
-            font-size: 40px;
-          }
-    }
-
-    @media screen and (max-width: 800px) {
-
-        #title {
-            padding-top: 30px;
-            font-size: 30px;
-            width: 90%;
-            left: 5%;
-          }
-
-        #containerAnnonce div {
-            width: 80%;
-          }
-
-    }
+  
+      .link {
+    width: 80%;
+  }
+  
+    
+  }
